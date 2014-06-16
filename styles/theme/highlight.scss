@@ -30,4 +30,75 @@ pre code {
     pre {
         margin: 0;
     }
+
+    .c,
+    .c1,
+    .cm,
+    .cp,
+    .cs {
+        color: $color-hl-comments;
+    }
+
+    .k,
+    .kc,
+    .kd,
+    .kn,
+    .kp,
+    .kr,
+    .kt {
+        color: $color-hl-keyword;
+    }
+
+    .m,
+    .mf,
+    .mh,
+    .mi,
+    .mo {
+        color: $color-hl-number;
+    }
+
+    .nb,
+    .nc,
+    .nf,
+    .nt,
+    .sr,
+    .si {
+        color: #c82829;
+    }
+
+    .nb,
+    .no,
+    .nv {
+        color: #f5871f;
+    }
+
+    .o {
+        color: $color-hl-string;
+    }
+
+    .s,
+    .s1,
+    .s2 {
+        color: $color-hl-string;
+    }
+
+    .sx {
+        color: #4271ae;
+    }
+
+    .css {
+        .n, {
+            color: $color-hl-keyword;
+        }
+    }
+
+    .scss {
+        .nv {
+            color: $color-base;
+        }
+
+        .na {
+            color: $color-hl-keyword;
+        }
+    }
 }
