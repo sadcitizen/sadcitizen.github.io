@@ -13,4 +13,13 @@ a {
         color: $color-link-hover;
         border-bottom: 1px solid lighten($color-link-hover, 20%);
     }
+
+    .l-footer & {
+        color: $color-body;
+        border-bottom: none;
+
+        &:hover {
+            border-bottom: 1px solid $color-body;
+        }
+    }
 }

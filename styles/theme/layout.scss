@@ -5,5 +5,60 @@ body {
 
 body {
     background-color: $color-body;
-    color: $color-text;
+    color: $color-base;
+}
+
+.l-layout {
+    @include size(100%);
+    height: auto !important;
+    min-height: 100%;
+}
+
+.l-push {
+    height: $footer-height;
+}
+
+.l-header {
+    border-top: $layout-stripe solid $color-link;
+}
+
+.l-body {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.l-footer {
+    height: $footer-height;
+    margin-top: -$footer-height;
+    background-color: $color-link;
+    color: $color-body;
+    padding-top: .75rem;
+}
+
+.l-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+@media (min-width: 56rem) {
+    .l-container {
+        max-width: 48rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 62rem) {
+    .l-container {
+        max-width: 56rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    .l-container {
+        max-width: 62rem;
+    }
 }
