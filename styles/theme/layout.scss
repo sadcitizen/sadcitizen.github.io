@@ -1,0 +1,9 @@
+html,
+body {
+    @include size(100%);
+}
+
+body {
+    background-color: $color-body;
+    color: $color-text;
+}

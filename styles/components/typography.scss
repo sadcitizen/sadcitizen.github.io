@@ -1,0 +1,16 @@
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    @include font-family(serif, $font-serif);
+}
+
+a {
+    color: $color-link;
+    text-decoration: none;
+    border-bottom: 1px solid lighten($color-link, 20%);
+
+    &:hover {
+        color: $color-link-hover;
+        border-bottom: 1px solid lighten($color-link-hover, 20%);
+    }
+}

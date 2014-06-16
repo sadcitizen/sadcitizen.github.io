@@ -1,10 +1,31 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://yourdomain.com"
+#dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+#settings
+permalink:        /post/:title/
+paginate:         10
+
+#params
+title:            'Евгений Абросимов'
+tagline:          'Frontend-разработчик'
+description:      ''
+keywords:         ''
+url:              http://instanceofpro.github.io
+
+version:          0.1.0
+
+#author
+author:
+  name:           'Евгений Абросимов'
+  email:          iam@instanceof.pro
+
+links:
+  github:         http://github.com/instanceofpro
+  twitter:        http://twitter.com/instanceofpro
+  linkedin:       http://linkedin.com/profile/view?id=246916719
+
+#public
+public:
+  images:         '/public/images'
+  styles:         '/public/css'
