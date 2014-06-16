@@ -8,18 +8,19 @@ a {
     color: $color-link;
     text-decoration: none;
     border-bottom: 1px solid lighten($color-link, 20%);
+    transition: all .5s ease;
 
     &:hover {
         color: $color-link-hover;
         border-bottom: 1px solid lighten($color-link-hover, 20%);
     }
+}
 
-    .l-footer & {
-        color: $color-body;
-        border-bottom: none;
+h1, h2, h3, h4, h5, h6 {
 
-        &:hover {
-            border-bottom: 1px solid $color-body;
-        }
-    }
+}
+
+dl, ol, ul, p {
+    margin-top: 0;
+    margin-bottom: 2rem;
 }

@@ -30,35 +30,20 @@ body {
 .l-footer {
     height: $footer-height;
     margin-top: -$footer-height;
-    background-color: $color-link;
-    color: $color-body;
-    padding-top: .75rem;
+    background-color: $color-footer;
+    padding-top: 2.25rem;
 }
 
 .l-container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 @media (min-width: 56rem) {
     .l-container {
-        max-width: 48rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
-@media (min-width: 62rem) {
-    .l-container {
-        max-width: 56rem;
-    }
-}
-
-@media (min-width: 75rem) {
-    .l-container {
-        max-width: 62rem;
+        max-width: 50rem;
     }
 }
