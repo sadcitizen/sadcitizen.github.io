@@ -1,0 +1,26 @@
+.b-logo {
+    @include size($logo-size);
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 50%;
+    border: .5rem solid $color-link;
+    font-size: 4rem;
+    line-height: $logo-size - 2rem;
+    text-align: center;
+    font-weight: bold;
+    transition: all .5s ease;
+
+    a {
+        border: none;
+        display: block;
+    }
+
+    &:hover {
+        background-color: $color-link;
+
+        a {
+            &, &:hover {
+                color: $color-body;
+            }
+        }
+    }
+}
