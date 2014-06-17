@@ -20,7 +20,28 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-dl, ol, ul, p {
+dl, ol, ul, p, blockquote {
     margin-top: 0;
     margin-bottom: 2rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 2rem;
+    margin-bottom: .5rem;
+}
+
+blockquote {
+    padding: 1rem 2rem;
+    margin: 0 -2rem 2rem -2rem;
+    color: lighten($color-base, 30%);
+    font-style: italic;
+    border-left: .25rem solid $color-link;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
