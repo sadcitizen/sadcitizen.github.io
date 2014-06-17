@@ -8,7 +8,7 @@ title: Home
         <li class="b-posts-i">
             <h2 class="b-posts-i-title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
             <p class="b-posts-i-excerpt">{{ post.excerpt }}</p>
-            <span class="b-posts-i-date">&mdash; {{ post.date | date_to_string }}</span>
+            <span class="b-posts-i-date">&mdash; {{ post.date | date: "%m/%d/%Y" }}</span>
         </li>
         {% endfor %}
     </ul>

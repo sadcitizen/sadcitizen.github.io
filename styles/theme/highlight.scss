@@ -53,37 +53,63 @@ pre code {
     .mf,
     .mh,
     .mi,
-    .mo {
+    .mo,
+    .il {
         color: $color-hl-number;
     }
 
+    .nd,
+    .ni,
+    .ne,
+    .nl,
+    .nn,
     .nb,
     .nc,
     .nf,
-    .nt,
-    .sr,
-    .si {
-        color: #c82829;
-    }
-
-    .nb,
     .no,
-    .nv {
-        color: #f5871f;
+    .nt,
+    .nv,
+    .bp {
+        color: $color-hl-name;
     }
 
-    .o {
+    .o,
+    .ow {
         color: $color-hl-string;
     }
 
     .s,
     .s1,
-    .s2 {
+    .s2,
+    .sb,
+    .sc,
+    .sd,
+    .se,
+    .sh,
+    .si,
+    .sr,
+    .ss,
+    .sx {
         color: $color-hl-string;
     }
 
-    .sx {
-        color: #4271ae;
+    .gd
+    .ge,
+    .gr,
+    .gh,
+    .gi,
+    .go,
+    .gp,
+    .gs,
+    .gu,
+    .gt {
+        color: $color-hl-generic;
+    }
+
+    .vc,
+    .vg,
+    .vi {
+        color: $color-hl-variable;
     }
 
     .css {
