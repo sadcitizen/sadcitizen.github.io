@@ -4,7 +4,8 @@ highlighter:      pygments
 
 #settings
 permalink:        /post/:title/
-paginate:         10
+paginate:         1
+paginate_path:    page/:num
 
 #params
 title:            'Евгений Абросимов'

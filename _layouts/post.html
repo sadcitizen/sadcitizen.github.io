@@ -21,3 +21,19 @@ layout: default
         {% endfor %}
     </ul>
 </div>
+
+{% if page.previous or page.next %}
+<hr />
+<div class="b-pages">
+    {% if page.previous %}
+    <div class="b-pages-previous">
+        <span>&larr;</span><a rel="prev" href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a>
+    </div>
+    {% endif %}
+    {% if page.next %}
+    <div class="b-pages-next">
+        <a rel="next" href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a><span>&rarr;</span>
+    </div>
+    {% endif %}
+</div>
+{% endif %}

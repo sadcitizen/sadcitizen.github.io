@@ -1,0 +1,30 @@
+.b-pages {
+    position: relative;
+    @include clearfix();
+}
+
+.b-pages-previous,
+.b-pages-next {
+    width: 45%;
+
+    span {
+        position: absolute;
+    }
+}
+
+.b-pages-previous {
+    float: left;
+
+    span {
+        left: -1.5rem;
+    }
+}
+
+.b-pages-next {
+    float: right;
+    text-align: right;
+
+    span {
+        right: -1.5rem;
+    }
+}
