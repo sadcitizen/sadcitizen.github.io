@@ -13,6 +13,7 @@ code {
     padding: .25em .5em;
     color: $color-red;
     @extend %highlight-container;
+    font-style: normal;
 }
 
 pre code {

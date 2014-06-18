@@ -4,12 +4,12 @@ highlighter:      pygments
 
 #settings
 permalink:        /post/:title/
-paginate:         1
+paginate:         10
 paginate_path:    page/:num
 
 #params
 title:            'Евгений Абросимов'
-tagline:          'Frontend-разработчик'
+tagline:          'Frontend разработчик'
 description:      ''
 keywords:         ''
 url:              http://instanceofpro.github.io
