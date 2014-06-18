@@ -25,6 +25,12 @@ dl, ol, ul, p, blockquote {
     margin-bottom: 2rem;
 }
 
+li {
+    ol, ul {
+        margin-left: 2rem;
+    }
+}
+
 dt {
     font-weight: bold;
 }
