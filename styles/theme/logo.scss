@@ -1,17 +1,15 @@
 .b-logo {
     @include size($logo-size);
     margin: 1rem 1rem 1rem 0;
+    float: left;
     border-radius: 50%;
-    border: .5rem solid $color-link;
-    font-size: 4rem;
-    line-height: $logo-size - 2rem;
-    text-align: center;
-    font-weight: bold;
-    transition: background-color .5s ease;
+    @include background('author.png');
+    box-shadow: 0 0 0 .25rem $color-link;
 
     a {
         border: none;
         display: block;
+        @include size($logo-size);
     }
 
     &:hover {

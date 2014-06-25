@@ -1,0 +1,15 @@
+.b-title {
+    float: left;
+    height: $logo-size;
+    margin: 1rem 0;
+
+    a {
+        display: block;
+        font-size: 2rem;
+        margin-bottom: .25rem;
+    }
+
+    span {
+        @extend %gray-italic;
+    }
+}

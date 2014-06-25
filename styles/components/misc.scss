@@ -8,3 +8,8 @@ hr {
 img {
     width: 100%;
 }
+
+%gray-italic {
+    color: lighten($color-base, 30%);
+    font-style: italic;
+}
