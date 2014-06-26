@@ -5,7 +5,7 @@ excerpt: "Howdy! This is an example blog post that shows several types of HTML c
 ---
 
 
-<div class="message">
+<div class="g-notice">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 </div>
 
