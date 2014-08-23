@@ -9,11 +9,6 @@ img {
     width: 100%;
 }
 
-%gray-italic {
-    color: lighten($color-base, 30%);
-    font-style: italic;
-}
-
 .g-notice {
     @extend %highlight-container;
     padding: 1rem 2rem;

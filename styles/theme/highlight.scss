@@ -1,6 +1,5 @@
 .highlight, pre, code {
-    @include font-family(mono, $font-mono);
-    font-size: 0.8125rem;
+    font: 0.875rem $font-family-mono;
 }
 
 %highlight-container {

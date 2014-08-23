@@ -6,15 +6,16 @@ highlighter:      pygments
 permalink:        /post/:title/
 paginate:         10
 paginate_path:    page/:num
+encoding:         utf-8
 
 #params
 title:            'Евгений Абросимов'
-tagline:          'Frontend разработчик'
+tagline:          Keep calm and 'use strict';
 description:      ''
 keywords:         ''
 url:              http://instanceofpro.github.io
 
-version:          0.1.0
+version:          0.2.0
 
 #author
 author:

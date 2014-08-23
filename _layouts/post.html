@@ -3,36 +3,40 @@ layout: default
 ---
 
 <article class="p-post">
-    <header class="p-post-header">
+    <header class="p-post__header">
         <h1>{{ page.title }}</h1>
-        <span class="p-post-date">&mdash; {{ page.date | date: "%m/%d/%Y" }}</span>
+        <span class="p-post__date">{{ page.date | date: "%d/%m/%Y" }}</span>
     </header>
-    {{ content }}
+    <hr />
+    <section class="p-post__content" role="main">
+        {{ content }}
+    </section>
 </article>
 
+{% if site.related_posts %}
 <div class="b-related">
-    <h3>Похожие записи</h3>
-    <ul>
-        {% for post in site.related_posts limit:3 %}
-        <li>
+    <h3 class="b-related__header">Похожие записи</h3>
+    <ul class="b-related__ls">
+        {% for post in site.related_posts limit:5 %}
+        <li class="b-related__i">
             <a href="{{ post.url }}">{{ post.title }}</a>
-            <span>&mdash; {{ post.date | date: "%m/%d/%Y" }}</span>
         </li>
         {% endfor %}
     </ul>
 </div>
+{% endif %}
 
 {% if page.previous or page.next %}
 <hr />
 <div class="b-pages">
     {% if page.previous %}
-    <div class="b-pages-previous">
-        <span>&larr;</span><a rel="prev" href="{{ page.previous.url | prepend: site.baseurl | replace: '//','/' }}">{{ page.previous.title }}</a>
+    <div class="b-pages__prev">
+        <a rel="prev" href="{{ page.previous.url | prepend: site.baseurl | replace: '//','/' }}">{{ page.previous.title }}</a>
     </div>
     {% endif %}
     {% if page.next %}
-    <div class="b-pages-next">
-        <a rel="next" href="{{ page.next.url | prepend: site.baseurl | replace: '//','/' }}">{{ page.next.title }}</a><span>&rarr;</span>
+    <div class="b-pages__next">
+        <a rel="next" href="{{ page.next.url | prepend: site.baseurl | replace: '//','/' }}">{{ page.next.title }}</a>
     </div>
     {% endif %}
 </div>

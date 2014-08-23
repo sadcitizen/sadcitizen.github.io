@@ -3,12 +3,12 @@ layout: default
 title: Home
 ---
 <section class="b-posts">
-    <ul class="b-posts-ls">
+    <ul class="b-posts__ls">
         {% for post in paginator.posts %}
-        <li class="b-posts-i">
-            <h2 class="b-posts-i-title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
-            <p class="b-posts-i-excerpt">{{ post.excerpt }}</p>
-            <span class="b-posts-i-date">&mdash; {{ post.date | date: "%m/%d/%Y" }}</span>
+        <li class="b-posts__i">
+            <h2 class="b-posts__title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
+            <p class="b-posts__excerpt">{{ post.excerpt }}</p>
+            <span class="b-posts__date">{{ post.date | date: "%d/%m/%Y" }}</span>
         </li>
         {% endfor %}
     </ul>

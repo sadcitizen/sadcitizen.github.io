@@ -1,7 +1,7 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    @include font-family(serif, $font-serif);
+    @include font-family(sans, $font-sans);
 }
 
 a {
@@ -16,18 +16,72 @@ a {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
-
+h1 {
+    font-size: 2em;
+    line-height: 1.2;
 }
 
-dl, ol, ul, p, blockquote {
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: .875em;
+}
+
+h6 {
+    font-size: .75em;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+dl, ol, ul,
+p, blockquote {
     margin-top: 0;
     margin-bottom: 2rem;
 }
 
+.b-post__content {
+
+}
+
+ol, ul {
+    padding-left: 1.5em;
+}
+
+ol {
+    list-style-position: outside;
+}
+
+ul {
+    list-style-type: none;
+
+    li {
+        position: relative;
+
+        &:before {
+            content: '\2014';
+            position: absolute;
+            left: -1.25em;
+        }
+    }
+}
+
 li {
     ol, ul {
-        margin-left: 2rem;
+        margin-bottom: 0;
     }
 }
 
