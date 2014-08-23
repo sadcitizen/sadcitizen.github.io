@@ -45,6 +45,6 @@ body {
 
 @media (min-width: 56rem) {
     .l-container {
-        max-width: 50rem;
+        max-width: $layout-width;
     }
 }
