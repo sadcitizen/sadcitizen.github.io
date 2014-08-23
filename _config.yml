@@ -27,7 +27,7 @@ links:
   twitter:        http://twitter.com/instanceofpro
   linkedin:       http://linkedin.com/profile/view?id=246916719
   rss:            /atom.xml
-  about:          /about.html
+  about:          /about/
 
 #public
 public:
