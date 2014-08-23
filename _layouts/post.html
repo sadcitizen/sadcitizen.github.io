@@ -12,7 +12,7 @@ layout: default
         {{ content }}
     </section>
 </article>
-
+<hr />
 {% if site.related_posts %}
 <div class="b-related">
     <h3 class="b-related__header">Похожие записи</h3>
@@ -40,4 +40,8 @@ layout: default
     </div>
     {% endif %}
 </div>
+{% endif %}
+
+{% if site.comments %}
+    {% include comments.html %}
 {% endif %}
