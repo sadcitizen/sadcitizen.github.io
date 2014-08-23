@@ -1,6 +1,7 @@
 .b-pages {
     position: relative;
     @include clearfix();
+    margin-bottom: 2rem;
 
     &__prev,
     &__next {
