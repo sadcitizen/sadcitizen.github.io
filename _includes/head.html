@@ -12,6 +12,7 @@
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:image" content="{{ site.url }}{{ site.public.images }}/{% if page.image %}{{ page.image }}{% else %}author.png{% endif %}">
+    <link rel="image_src" href="{{ site.url }}{{ site.public.images }}/{% if page.image %}{{ page.image }}{% else %}author.png{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
 
