@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<article class="p-post">
+<article class="p-post" role="main">
     <header class="p-post__header">
         <h1>{{ page.title }}</h1>
         <span class="p-post__date">{{ page.date | date: "%d/%m/%Y" }}</span>
     </header>
     <hr />
-    <section class="p-post__content" role="main">
+    <section class="p-post__content">
         {{ content }}
     </section>
 </article>

@@ -7,7 +7,7 @@ title: Home
         {% for post in paginator.posts %}
         <li class="b-posts__i">
             <h2 class="b-posts__title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
-            <p class="b-posts__excerpt">{{ post.excerpt }}</p>
+            <p class="b-posts__description">{{ post.description }}</p>
             <span class="b-posts__date">{{ post.date | date: "%d/%m/%Y" }}</span>
         </li>
         {% endfor %}
