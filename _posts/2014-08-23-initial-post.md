@@ -3,7 +3,7 @@ layout: post
 title: Вступительный пост
 description: Вступительный пост
 keywords: Первый пост
-image: mountains.jpg
+image: mountains.png
 ---
 
 ![Mountains]({{ site.public.images }}/{{ page.image }})

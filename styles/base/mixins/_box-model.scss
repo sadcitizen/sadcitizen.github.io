@@ -9,14 +9,14 @@
         @include clearfix();
 
         > li {
-            @include is-left();
+            float: left;
         }
     } @else {
         @include cancel();
-        @include is-block();
+        display: block;
 
         > li {
-            @include is-block();
+            display: block;
         }
     }
 }
