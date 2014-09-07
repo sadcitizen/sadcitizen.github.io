@@ -18,7 +18,8 @@ module.exports = function(grunt) {
 
         meta: {
             public: './public/',
-            styles: './styles/'
+            styles: './styles/',
+            scripts: './public/js/'
         },
 
         sass: {
@@ -41,10 +42,38 @@ module.exports = function(grunt) {
             }
         },
 
+        jscs: {
+            src: ['<%= meta.scripts %>*.js', '!<%= meta.scripts %>*.min.js', 'gruntfile.js'],
+            options: {
+                config: '.jscsrc'
+            }
+        },
+
+        jshint: {
+            src: '<%= jscs.src %>',
+            options: {
+                jshintrc: '.jshintrc'
+            }
+        },
+
+        uglify: {
+            scripts: {
+                src: '<%= meta.scripts %>share.js',
+                dest: '<%= meta.scripts %>share.min.js',
+                options: {
+                    banner: banner
+                }
+            }
+        },
+
         watch: {
             styles: {
                 files: ['<%= meta.styles %>**/*.scss'],
                 tasks: ['styles']
+            },
+            scripts: {
+                files: '<%= jscs.src %>',
+                tasks: ['scripts']
             }
         },
 
@@ -72,5 +101,10 @@ module.exports = function(grunt) {
         'autoprefixer',
         'cssmin',
         'clean'
+    ]);
+    grunt.registerTask('scripts', [
+        'jscs',
+        'jshint',
+        'uglify'
     ]);
 };
