@@ -34,3 +34,4 @@ links:
 public:
   images:         /public/images
   styles:         /public/css
+  scripts:        /public/js

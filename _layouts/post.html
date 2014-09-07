@@ -15,11 +15,11 @@ layout: default
 
 {% if site.social %}
 <hr />
-<div class="b-social">
+<div class="b-social js-social" data-title="{{ page.title }}">
     <ul class="b-social__ls">
-        <li class="b-social__i b-social__i--vk"></li>
-        <li class="b-social__i b-social__i--tw"></li>
-        <li class="b-social__i b-social__i--fb"></li>
+        <li class="b-social__i b-social__i--vk" data-type="vk"></li>
+        <li class="b-social__i b-social__i--tw" data-type="tw"></li>
+        <li class="b-social__i b-social__i--fb" data-type="fb"></li>
     </ul>
 </div>
 {% endif %}

@@ -8,3 +8,7 @@
         &bullet; <a href="{{ site.links.about | prepend: site.baseurl | replace: '//','/' }}">Об авторе</a>
     </div>
 </footer>
+
+{% if site.social %}
+    <script src="{{ site.public.scripts | prepend: site.baseurl | replace: '//','/' }}/share.js?v={{ site.version }}"></script>
+{% endif %}
