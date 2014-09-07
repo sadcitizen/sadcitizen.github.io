@@ -19,6 +19,7 @@ version:          0.3.0
 comments:         true
 social:           true
 ga:               true
+metrika:          true
 
 #author
 author:
