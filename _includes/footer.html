@@ -9,6 +9,6 @@
     </div>
 </footer>
 
-{% if site.social %}
+{% if site.social and page.title != "Home" %}
     <script src="{{ site.public.scripts | prepend: site.baseurl | replace: '//','/' }}/share.min.js?v={{ site.version }}"></script>
 {% endif %}

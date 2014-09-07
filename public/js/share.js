@@ -14,7 +14,7 @@
                 x: screen.width / 2 - 300,
                 y: screen.height / 2 - 200
             },
-            win = window.open(url, doc.title, 'left=' + point.x + ',top=' + point.y + ',width=600,height=400,scrollbars=1,resizable=1');
+            win = window.open(url, '', 'left=' + point.x + ',top=' + point.y + ',width=600,height=400,scrollbars=1,resizable=1');
 
         win.focus();
     }
@@ -37,8 +37,13 @@
         };
 
     function clickHandler(e) {
-        type = e.target.dataset.type;
-        title = e.currentTarget.dataset.title;
+        if (e.target.dataset !== undefined) { // standart
+            type = e.target.dataset.type;
+            title = e.currentTarget.dataset.title;
+        } else { // IE sucks!
+            type = e.target.getAttribute('data-type');
+            title = e.currentTarget.getAttribute('data-title');
+        }
 
         if (actions[type]) {
             actions[type].fn(window.location.href, actions[type].path, title);
