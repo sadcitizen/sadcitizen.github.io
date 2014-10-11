@@ -4,7 +4,7 @@
 
 %highlight-container {
     border-radius: 3px;
-    background-color: $color-gray-f0;
+    background-color: $color-gray-f9;
     box-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
 
@@ -23,9 +23,19 @@ pre code {
 }
 
 .highlight {
+    position: relative;
     @extend %highlight-container;
     padding: 1rem 2rem;
     margin: 0 -2rem 2rem -2rem;
+
+    &:after {
+        @include absolute(top 10px right 10px);
+        display: block;
+        content: '</>';
+        letter-spacing: -1px;
+        color: $color-gray-cc;
+        font: 1rem $font-sans, $font-family-sans-serif;
+    }
 
     pre {
         margin: 0;
