@@ -16,6 +16,10 @@ a {
     }
 }
 
+.l-footer {
+    text-align: center;
+}
+
 h1 {
     font-size: 2em;
     line-height: 1.2;
@@ -41,20 +45,12 @@ h6 {
     font-size: .75em;
 }
 
-h1, h2, h3 {
-    font-weight: normal;
-}
-
 h1, h2, h3,
 h4, h5, h6,
 dl, ol, ul,
 p, blockquote {
     margin-top: 0;
     margin-bottom: 2rem;
-}
-
-.b-post__content {
-
 }
 
 ol, ul {
