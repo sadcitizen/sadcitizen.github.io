@@ -7,8 +7,8 @@ title: Об авторе
 {
     "name": "Евгений Абросимов",
     "description": "Фронтенд-разработчик",
-    "age": 29,
-    "experience": 10,
+    "age": 30,
+    "experience": 11,
     "contacts": {
         "email": "iam@instanceof.pro",
         "skype": "eugene_abrosimov",
@@ -36,8 +36,10 @@ title: Об авторе
             "underscore/lodash",
             "backbone/marionette",
             "require/almond",
+            "browserify",
             "jshint",
-            "jscs"
+            "jscs",
+            "babel"
         ],
         "tools": [
             "grunt",
