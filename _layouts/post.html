@@ -13,6 +13,15 @@ layout: default
     </section>
 </article>
 
+{% if page.tags.size > 0 %}
+    <hr />
+    <p>
+        {% for tag in page.tags %}
+            <a href="{{ site.url }}/tags/{{ tag | uri_escape }}">#{{tag}}</a>
+        {% endfor %}
+    </p>
+{% endif %}
+
 {% if site.social %}
 <hr />
 <div class="b-social js-social" data-title="{{ page.title }}">
@@ -24,7 +33,7 @@ layout: default
 </div>
 {% endif %}
 
-{% if site.related_posts %}
+{% if site.related_posts.size > 0 %}
 <hr />
 <div class="b-related">
     <h3 class="b-related__header">Похожие записи</h3>
