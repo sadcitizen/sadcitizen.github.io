@@ -1,10 +1,17 @@
 ---
 layout: default
-title: "404: Page not found"
+title: "Ошибка 404: Страница не найдена"
 permalink: 404.html
 ---
 
-<div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}">Head back home</a> to try finding it again.</p>
-</div>
+<article class="p-post" role="main">
+    <header class="p-post__header">
+        <h1>{{ page.title }}</h1>
+    </header>
+    <hr />
+    <section class="p-post__content">
+        <p>
+        	К сожалению, запрашиваемая страница не найдена. <a href="{{ site.url }}">Начните с начала</a>.
+        </p>
+    </section>
+</article>
