@@ -14,7 +14,7 @@ title:            Евгений Абросимов
 tagline:          Keep calm and 'use strict';
 description:      Здесь будет описание
 keywords:         Здесь будет список ключевых слов
-url:              http://instanceof.pro
+url:              http://sadcitizen.github.io
 version:          0.3.0
 comments:         true
 social:           true
@@ -27,8 +27,8 @@ author:
   email:          iam@instanceof.pro
 
 links:
-  github:         http://github.com/instanceofpro
-  twitter:        http://twitter.com/instanceofpro
+  github:         http://github.com/sadcitizen
+  twitter:        http://twitter.com/abrosimov
   linkedin:       http://linkedin.com/profile/view?id=246916719
   rss:            /atom.xml
   about:          /about/

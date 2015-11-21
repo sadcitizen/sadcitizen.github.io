@@ -10,7 +10,7 @@ title: Об авторе
     "age": 30,
     "experience": 11,
     "contacts": {
-        "email": "iam@instanceof.pro",
+        "email": "sadcitizen@yandex.ru",
         "skype": "eugene_abrosimov",
         "location": "Челябинск"
     },
