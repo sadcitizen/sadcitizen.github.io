@@ -1,17 +1,13 @@
----
-layout: default
-title: Home
----
-<section class="b-posts">
-    <ul class="b-posts__ls">
-        {% for post in paginator.posts %}
-        <li class="b-posts__i">
-            <h2 class="b-posts__title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
-            <p class="b-posts__description">{{ post.description }}</p>
-            <span class="b-posts__date">{{ post.date | date: "%d/%m/%Y" }}</span>
-        </li>
-        {% endfor %}
-    </ul>
-</section>
-
-{% include pagination.html %}
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sadcitizen.me</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        hi!
+    </body>
+</html>
